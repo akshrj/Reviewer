@@ -24,7 +24,9 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
 
-mongoose.connect("mongodb://localhost/yelp_camp");
+//mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb+srv://akshay:Qwerasdf@cluster0.t6q0o.mongodb.net/yelp?retryWrites=true&w=majority");
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('views', path.join(__dirname, 'views'))
 app.set("view engine", "ejs");
